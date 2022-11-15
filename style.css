@@ -1,0 +1,104 @@
+/* --------------------------- GLOBAL STYLE ---------------------------- */
+body{
+    margin: 0;
+    font-family: 'Anonymous Pro';
+}
+h1, h2, h3, h4{
+    margin: 0;
+    font-weight: lighter;
+}
+a {
+    text-decoration: none;
+}
+.wrapper {
+    margin: 0 3rem;
+}
+.transparent-input-field {
+    width: 100%;
+    outline: none;
+    border: none;
+    border-bottom: .1rem solid rgb(217, 236, 252);
+    background-color: transparent;
+    font-family: 'Anonymous Pro';
+    border-radius: .2rem;
+}
+.btn-general{
+    border: none;
+    width: 7rem;
+    height: 2rem;
+    border-radius: .2rem;
+    font-family: monospace;
+    background-color: rgb(161, 218, 161);
+}
+.btn-general:hover {
+    filter: drop-shadow(0 0 0.55rem rgb(155, 200, 155));
+    cursor: pointer;
+}
+/* --------------------------- FOOTER VIEWPORT ---------------------------- */
+
+footer {
+    margin-top: 2rem;
+    height: 60vh;
+    background-color: hsl(215, 16%, 15%);
+    padding: 3rem 0 0;
+} 
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact-card {
+    padding: 2rem;
+    width: 40vw;
+    background-color: aliceblue;
+    border-radius: .5rem;
+    border-top: .2rem solid rgb(161, 218, 161);
+}
+
+form input{
+    margin: 1.4rem 0 .6rem 0;
+    height: 1.2rem;  
+}
+
+form textarea {
+    margin: 1rem 0 1.4rem 0;
+}
+
+.newsletter {
+    float: right;
+    margin-top: .5rem;
+}
+
+.newsletter-lbl {
+    display: block;
+    padding-left: 15px;
+    text-indent: -15px;
+    color: rgba(0,0,0,.7);
+    font-weight: lighter;
+    font-family: monospace;
+  }
+  
+.newsletter-toggle {
+    width: 15px;
+    height: 15px;
+    padding: 0;
+    margin: 0;
+    vertical-align: bottom;
+    position: relative;
+    top: -1px;
+  }
+
+.social-footer {
+    margin-top: 2rem;
+    color: aliceblue;
+}
+.social-footer a {
+    color: rgb(161, 218, 161);
+    margin-right: 1rem;
+}
+
+.social-footer a:hover {
+    filter: drop-shadow(0 0 0.55rem rgb(155, 200, 155));
+}
+/* ---------------------------X FOOTER VIEWPORT X-------------------------- */
