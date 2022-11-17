@@ -1,4 +1,5 @@
-/* --------------------------- GLOBAL STYLE ---------------------------- */
+@import url('https://fonts.googleapis.com/css2?family=BhuTuka+Expanded+One&display=swap');
+/* --------------------------- GLOBAL STYLES ---------------------------- */
 body{
     margin: 0;
     font-family: 'Anonymous Pro';
@@ -37,6 +38,160 @@ ul {
     filter: drop-shadow(0 0 0.55rem rgb(155, 200, 155));
     cursor: pointer;
 }
+/* -------------------------xx GLOBAL STYLES xx-------------------------- */
+
+
+/* --------------------------- FIRST VIEWPORT ---------------------------- */
+
+
+.landing-viewport{
+    height: 100vh;
+    width: 100%;
+    background-image:linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(./Resources/picture\ 1.jpeg.jpg);
+    position: relative;
+    background-position: center;
+    background-size: cover;
+}
+.primary-nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 2% 6%;
+    align-items: center;
+    margin-left: 2rem;
+}
+.nav-logo{
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.5rem;
+    letter-spacing: .3rem;
+}
+.nav-logo span{
+    color: #f44336;
+}
+.nav-list ul li{
+    display: inline-block;
+    list-style: none;
+    padding: 4% 4%;
+}
+.nav-list{
+  flex: 1;
+  text-align: right;
+}
+.nav-list ul li a{
+    font-family: 'Anonymous Pro';
+    text-decoration: none;
+    font-size: .8rem;
+    color:rgba(255, 255, 255, 0.856);   
+}
+.nav-list ul li::after{
+    content: '';
+    width: 0%;
+    height: .15rem;
+    display:block;
+    margin: auto;
+    background:#fcfc;
+}
+.nav-list ul li:hover::after{
+    width: 100%;
+}
+
+.frst-viewport-intro{
+    text-align: center;
+    width: 60%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.frst-viewport-intro h1{
+    font-size: 4rem;
+    font-family: "BhuTuka Expanded One";
+    color: rgba(255, 255, 255, 0.733);
+}
+.frst-viewport-intro p{
+    margin: 1rem 0 4.5rem;
+    font-family: "BhuTuka Expanded One";
+    color: rgba(255, 255, 255, 0.733);
+}
+.btn{
+    background: transparent;
+    display: inline-block;
+    text-decoration: none;
+    font-size: 14px;
+    border: .13rem solid rgba(255, 255, 255, 0.541);
+    color: rgba(255, 255, 255, 0.856);
+    padding: .7rem .8rem;
+    position: relative;
+    cursor: pointer;
+}
+.btn:hover{
+    transition:0.5s ;
+    border: .13rem solid #f44336;
+    background: #f44336;
+}
+
+/* --------------------------- FIRST VIEWPORT ---------------------------- */
+/* --------------------------- ABOUT SECTION ---------------------------- */
+
+.about-us-viewport {
+    height: 80vh;
+    background-color: #e0e2e2;
+}
+
+.year-time {
+    height: 65vh;
+    width: 35%;
+    background-color: #fff;
+    border-radius: 0 0 .5rem;
+    display: inline-block;
+}
+.float-right {
+    float: right;
+    margin: 8rem 5rem 0 0;
+}
+.float-right h3 {
+    font-size: 2rem;
+    color:rgb(161, 218, 161);
+}
+.float-right h3 span {
+    font-size: 1.2rem;
+    padding-left: .1rem;
+}
+.float-right p {
+    font-family: 'Anonymous Pro';
+    margin-top: 0;
+    color: rgb(61, 61, 61);
+    line-height: .9rem;
+    font-size: .8rem;
+}
+.about-us-viewport img{
+    width: 25%;
+    height: 50vh;
+    position: relative;
+    top: -6.5rem;
+    left: -4.5rem;
+    filter: grayscale(.5);
+}
+.about {
+    float: right;
+    width: 35vw;
+    position: relative;
+    top: 8rem;
+    right: 5rem;
+}
+
+.about h2 {
+    font-size: 2rem;
+    color: rgb(145, 219, 145);
+}
+.about p {
+    font-size: .8rem;
+    color: rgb(61, 61, 61);
+    line-height: 1.1rem;
+}
+/* -------------------------xx ABOUT SECTION xx-------------------------- */
+
 
 /* --------------------------- HIRE_US VIEWPORT ---------------------------- */
 
@@ -58,6 +213,16 @@ footer {
 .footer-container {
     display: flex;
     justify-content: space-between;
+}
+
+.right-footer-elements {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.right-footer-elements h1 {
+    color: rgba(255, 204, 255, 0.466);
 }
 
 .contact-card {
@@ -138,3 +303,36 @@ footer nav ul li a span {
     font-size: .8rem;
 }
 /* ---------------------------X FOOTER VIEWPORT X-------------------------- */
+
+
+/* ---------------------------------- MEDIA QUERY --------------------------- */
+
+@media(max-width:500px){
+    .sap h1{
+        font-size: 25px;
+    }
+    .navlink ul li{
+        display: block;
+    }
+    .navlink{
+        position: absolute;
+        width: 200px;
+        background-color: #f44336;
+        top: 0;
+        right: 0;
+        height: 100vh;
+        z-index: 2;
+        text-align: left;
+        transition: 1s;
+    }
+
+    .navlink ul{
+        padding: 30px;
+    }
+    .fa-solid{
+        color: #fff;
+        display: block;
+        margin: 10px;
+        cursor: pointer;
+    }
+}
